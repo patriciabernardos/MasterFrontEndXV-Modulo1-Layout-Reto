@@ -1,0 +1,44 @@
+:root {
+  --background-color: #141414;
+  --font-color: #fff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header, .header-logo, .header-buttons {
+  align-items: center;
+  display: flex;
+}
+
+header {
+  justify-content: space-between;
+}
+
+.header-logo .platform-title {
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+.header-buttons div {
+  padding: 1em;
+}
+
+.top, .first, .second {
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  display: flex;
+}
+
+.section-title {
+  margin-top: 2em;
+}
+
+.item {
+  flex-grow: -1;
+}
+
+/*# sourceMappingURL=index.b6267e08.css.map */

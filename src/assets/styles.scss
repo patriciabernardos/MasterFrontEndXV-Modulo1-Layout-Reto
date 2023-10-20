@@ -1,0 +1,48 @@
+:root {
+    --background-color:#141414;
+    --font-color:#fff;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+    color:var(--font-color);
+}
+
+header, .header-logo, .header-buttons{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    justify-content: space-between;
+}
+
+.header-logo .platform-title{
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+.header-logo{
+
+}
+
+.header-buttons div{
+    padding: 1em;
+
+}
+
+.top, .first, .second{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.section-title{
+    margin-top: 2em;
+}
+
+.item{
+    flex-grow: -1;
+}
