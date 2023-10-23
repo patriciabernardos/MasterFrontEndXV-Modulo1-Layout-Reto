@@ -1,48 +1,88 @@
-:root {
-    --background-color:#141414;
-    --font-color:#fff;
+$dark: #141414;
+$white: #fff;
 
-}
+$i: 0;
 
-body{
+@for $i from 1 through 8 {
+
+    li:nth-child(#{$i}) {
+        padding-left: $i * 20px
+   
+  
+    }}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--background-color);
-    color:var(--font-color);
+    background-color: $dark;
+    color: $white;
 }
 
-header, .header-logo, .header-buttons{
+header,
+.header-logo,
+.header-buttons {
     display: flex;
     align-items: center;
 }
 
-header{
+header {
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
-.header-logo .platform-title{
+.header-logo .platform-title {
     padding: 1em;
     font-size: 1.2em;
 }
 
-.header-logo{
+.header-logo img{
+    width: 40%;
+}
+
+.header-buttons div:hover {
+    background-color: $white;
+    color: $dark;
+    border-radius: 5px;
 
 }
 
-.header-buttons div{
+.header-buttons div {
     padding: 1em;
 
 }
 
-.top, .first, .second{
+.top,
+.first,
+.second {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-around;
+    align-items: center;
 }
 
-.section-title{
+.top,
+.first{
+    flex-direction: row-reverse;
+}
+
+.section-title {
     margin-top: 2em;
 }
 
-.item{
-    flex-grow: -1;
+.item {
+
+    & img {
+        width: 100%;
+    }
+/*
+    & img:hover {
+        width: 125%;
+
+    }
+     */
+
+}
+
+.first:hover .item {
+    width: 25%;
+
 }
